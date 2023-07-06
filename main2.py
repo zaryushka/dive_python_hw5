@@ -5,8 +5,9 @@
 # премии в качестве значения. Сумма рассчитывается
 # как ставка умноженная на процент премии 
 
+
 name = ['Alex', 'John', 'Ben']
 stavka = [50, 60, 45]
 bonus = [10.5, 12.5, 9.5]
-result = {name[i]: stavka[i] * bonus[i] for i in range(len(name))}
+result = {name[i]: stavka[i] * bonus[i] / 100 for i in range(len(name))}
 print(result)
